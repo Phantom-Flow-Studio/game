@@ -21,7 +21,7 @@
     --shadow: 0 24px 48px rgba(181, 101, 127, 0.08);
     --shadow-sm: 0 4px 16px rgba(59, 37, 44, 0.05);
     --shadow-lg: 0 32px 64px rgba(59, 37, 44, 0.1);
-    --header-bg: rgba(227, 228, 219, 0.85);
+    --header-bg: #404C62;
     --dot-color: rgba(59, 37, 44, 0.08);
     --thumb-1: linear-gradient(135deg, #404C62 0%, #404C62 100%);
     --thumb-2: linear-gradient(135deg, #5c9bbe 0%, #b7d9f4 100%);
