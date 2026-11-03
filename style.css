@@ -363,6 +363,9 @@
       gap: 1.5rem;
     }
 
+    .nav-list a:hover{
+      transform: translateY(-1px);
+
     .header-inner {
       position: absolute !important;
     }
