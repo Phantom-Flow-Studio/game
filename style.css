@@ -389,18 +389,7 @@
   .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(
-      circle at 1px 1px,
-      var(--dot-color) 1px,
-      transparent 0
-    );
-    background-size: 22px 22px;
-    mask-image: radial-gradient(ellipse 90% 80% at 50% -10%, black 15%, transparent 72%);
-    -webkit-mask-image: radial-gradient(
-      ellipse 90% 80% at 50% -10%,
-      black 15%,
-      transparent 72%
-    );
+    background:var(--bg-soft);
     pointer-events: none;
   }
   
