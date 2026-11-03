@@ -355,7 +355,7 @@
       opacity: 1 !important;
       visibility: visible !important;
       background: transparent !important;
-      box-shadow: none !important;
+      box-shadow: flex !important;
       justify-content: center !important;
     }
   
