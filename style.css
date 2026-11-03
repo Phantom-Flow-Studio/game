@@ -363,21 +363,20 @@
     }
   
     .nav-list {
+      display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 0.25rem;
+      align-items: center;
+      gap: 1.5rem;
     }
-  
-    .nav-list a:hover {
-      transform: translateY(-1px);
-    }
-  
+
     .header-inner {
       display: grid;
       grid-template-columns: auto 1fr auto 1fr;
       align-items: center;
     }
+    
   }
   
   /* ===== Hero (minitap: centered + full demo) ===== */
