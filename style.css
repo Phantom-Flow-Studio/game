@@ -371,7 +371,7 @@
     .nav-list a:hover{
       transform: translateY(-1px);
     }
-    
+
     .header-inner {
       display: flex !important;
       align-items: center !important;
@@ -1347,5 +1347,4 @@
   .reveal.is-visible {
     opacity: 1;
     transform: translateY(0);
-  }
   }
