@@ -349,25 +349,32 @@
     }
   
     .site-nav {
-      position: absolute !important;
-      left: 50% !important;
-      transform: translateX(-50%) !important;
+      display: flex !important;
+      position: static !important;
+      transform: none !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      justify-content: center !important;
     }
   
     .nav-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 1.5rem;
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 1.5rem !important;
     }
 
     .nav-list a:hover{
       transform: translateY(-1px);
 
     .header-inner {
-      position: absolute !important;
+      display: flex !important;
+      grid-template-columns: 1fr auto 1fr !important;
+      align-items: center !important;
     }
     
   }
