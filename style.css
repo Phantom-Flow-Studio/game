@@ -265,9 +265,8 @@ button {
 
 .header-actions {
   display: flex;
+  justify-self: end;
   align-items: center;
-  gap: 0.5rem;
-  flex-shrink: 0;
 }
 
 .header-cta {
@@ -360,15 +359,9 @@ button {
 /*nav middle*/
   .site-nav {
     display: flex !important;
-    position: absolute !important;
+    position: static !important;
 
-    left: 50% !important;
-    right: auto !important;
-    top: 50% !important;
-    bottom: auto !important;
-    inset-inline: auto !important;
-
-    transform: translate(-50%,-50%) !important;
+    transform: none !important;
 
     width: max-content;
     padding: 0 !important;
@@ -380,13 +373,13 @@ button {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    justify-content: center !important;
+    justify-content: center;
   }
 
   .nav-list {
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: wrap !important;
+    flex-wrap: nowrap !important;
     justify-content: center !important;
     align-items: center !important;
     gap: 1.5rem !important;
@@ -397,8 +390,10 @@ button {
   }
 
   .header-inner {
-    display: flex !important;
+    display: grid !important;
+    grid-template-columns: 1fr auto 1fr;
     align-items: center !important;
+    width: 100%;
   }
   
 }
