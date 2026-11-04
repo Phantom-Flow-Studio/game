@@ -1506,7 +1506,9 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
-/* ===== 全站固定漸層背景 ===== */
+
+
+/* ===== 漸層背景 ===== */
 
 html {
   min-height: 100%;
@@ -1552,7 +1554,7 @@ main section,
   background: #404C62;
 }
 
-/* 手機展開選單：不使用透明背景 */
+/* 手機展開選單背景 */
 @media (max-width: 767px) {
   .site-nav {
     background: #404C62 !important;
