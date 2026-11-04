@@ -243,6 +243,12 @@ button {
 .header-inner {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding-inline: 0.75rem;
+  min-height: var(--nav-height);
 }
 
 .logo {
@@ -359,10 +365,15 @@ button {
     left: 50% !important;
     right: auto !important;
     top: 50% !important;
-    transform: translateX(-50%,-50%) !important;
+    bottom: auto !important;
+    inset-inline: auto !important;
+
+    transform: translate(-50%,-50%) !important;
 
     width: max-content;
     padding: 0 !important;
+    margin: 0 !important;
+
     opacity: 1 !important;
     visibility: visible !important;
 
