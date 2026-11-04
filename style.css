@@ -366,6 +366,7 @@ button {
     background: transparent !important;
     box-shadow: none !important;
     justify-content: center !important;
+    margin-inline: auto !important;
   }
 
   .nav-list {
