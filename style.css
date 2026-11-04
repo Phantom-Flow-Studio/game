@@ -234,21 +234,15 @@ button {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--header-bg);
+  background: rgba(64,76,98,0.78);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
 }
 
 .header-inner {
   position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-  padding-inline: 0.75rem;
-  min-height: var(--nav-height);
 }
 
 .logo {
@@ -361,14 +355,19 @@ button {
   .site-nav {
     display: flex !important;
     position: absolute !important;
+
     left: 50% !important;
-    right: 50% !important;
-    transform: translate(-50%, -50%) !important;
+    right: auto !important;
+    top: 50% !important;
+    transform: translateX(-50%,-50%) !important;
 
     width: max-content;
+    padding: 0 !important;
     opacity: 1 !important;
     visibility: visible !important;
+
     background: transparent !important;
+    border: none !important;
     box-shadow: none !important;
     justify-content: center !important;
   }
