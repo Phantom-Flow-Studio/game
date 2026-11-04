@@ -1295,15 +1295,24 @@ button {
 }
 
 .project-thumb--alt {
+  height: 12px;
+  aspect-ratio: auto;
   background: var(--thumb-2);
+  flex-shrink: 0;
 }
 
 .project-thumb--alt2 {
+  height: 12px;
+  aspect-ratio: auto;
   background: var(--thumb-3);
+  flex-shrink: 0;
 }
 
 .project-thumb--alt3 {
+  height: 12px;
+  aspect-ratio: auto;
   background: var(--thumb-4);
+  flex-shrink: 0;
 }
 
 .project-body {
