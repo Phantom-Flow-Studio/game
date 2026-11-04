@@ -145,7 +145,7 @@
   }
 
   // 隨機星球
-  const planetCount = window.innerWidth < 768 ? 8 : 20;
+  const planetCount = window.innerWidth < 768 ? 1 : 2;
 
   for (let i = 0; i < planetCount; i++) {
     const planet = document.createElement("span");

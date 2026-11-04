@@ -1287,7 +1287,7 @@ button {
 }
 
 .project-thumb {
-  height: 90px;
+  height: 12px;
   aspect-ratio: auto;
   background: var(--thumb-1);
   flex-shrink: 0;
