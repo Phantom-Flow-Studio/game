@@ -229,7 +229,7 @@ button {
   font-size: 0.8125rem;
 }
 
-/* ===== Header & nav ===== */
+/* ===== header and nav ===== */
 .site-header {
   position: sticky;
   top: 0;
@@ -241,6 +241,7 @@ button {
 }
 
 .header-inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -347,7 +348,7 @@ button {
 }
 
 
-
+/* computer*/
 @media (min-width: 768px) {
   .nav-toggle {
     display: none;
@@ -356,17 +357,20 @@ button {
   .header-cta {
     display: inline-flex;
   }
-
+/*nav middle*/
   .site-nav {
     display: flex !important;
-    position: static !important;
-    transform: none !important;
+    position: absolute !important;
+    left: 50% !important;
+    right: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    width: max-content;
     opacity: 1 !important;
     visibility: visible !important;
     background: transparent !important;
     box-shadow: none !important;
     justify-content: center !important;
-    margin-inline: auto !important;
   }
 
   .nav-list {
@@ -1659,7 +1663,7 @@ main,
   transform: rotate(-22deg);
 }
 
-/* 手機版裝飾 */
+/* 手機版 */
 @media (max-width: 767px) {
   .space-planet {
     opacity: 1;
