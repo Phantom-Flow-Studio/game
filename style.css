@@ -1620,14 +1620,14 @@ main,
   width: var(--planet-size);
   aspect-ratio: 1;
   border-radius: 50%;
-  opacity: 0.78;
+  opacity: 1;
 
   background: radial-gradient(
     circle at 30% 28%,
-    #F7E8EF 0%,
-    #DDBECA 28%,
-    #9C8EA9 65%,
-    #59677D 100%
+    #fdf5f8 0%,
+    #f0d8e1 28%,
+    #cebfdb 65%,
+    #8898b2 100%
   );
 
   box-shadow:
@@ -1643,7 +1643,7 @@ main,
   height: 35%;
   left: -27%;
   top: 33%;
-  border: 2px solid rgba(245, 222, 235, 0.75);
+  border: 2px solid rgba(250, 240, 246, 1);
   border-radius: 50%;
   transform: rotate(-22deg);
 }
@@ -1651,6 +1651,6 @@ main,
 /* 手機版裝飾 */
 @media (max-width: 767px) {
   .space-planet {
-    opacity: 0.55;
+    opacity: 1;
   }
 }

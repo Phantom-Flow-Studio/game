@@ -129,7 +129,7 @@
   space.setAttribute("aria-hidden", "true");
 
   // 隨機星星
-  const starCount = window.innerWidth < 768 ? 65 : 120;
+  const starCount = window.innerWidth < 768 ? 90 : 150;
 
   for (let i = 0; i < starCount; i++) {
     const star = document.createElement("span");
@@ -145,7 +145,7 @@
   }
 
   // 隨機星球
-  const planetCount = window.innerWidth < 768 ? 2 : 4;
+  const planetCount = window.innerWidth < 768 ? 8 : 20;
 
   for (let i = 0; i < planetCount; i++) {
     const planet = document.createElement("span");
@@ -155,7 +155,7 @@
     planet.style.setProperty("--planet-y", Math.random() * 90 + "%");
     planet.style.setProperty(
       "--planet-size",
-      (Math.random() * 65 + 45) + "px"
+      (Math.random() * 40 + 15) + "px"
     );
 
     space.appendChild(planet);
