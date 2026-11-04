@@ -1,25 +1,23 @@
 :root {
   color-scheme: dark;
-  --color-cream: #DDBECA;
-  --color-gray: #404C62;
-  --color-lavender: #DDBECA;
-  --color-purple: #DDBECA;
-  --color-plum: #FFFFFF;
+  --color-pink: #DDBECA;
+  --color-blue: #404C62;
+  --color-white: #FFFFFF;
 
-  --bg: #404C62;
+  --bg: var(--color-blue);
   --bg-elevated: rgba(255,255,255,0.12);
   --bg-soft: transparent;
 
-  --text: #FFFFFF;
+  --text: var(--color-white);
   --text-muted: rgba(255,255,255,0.78);
 
-  --accent: #DDBECA;
-  --accent-secondary: #EAD4DE;
+  --accent: var(--color-pink);
+  --accent-secondary: var(--color-white);
   --accent-soft: rgba(221,190 , 202, 0.18);
   --accent-secondary-soft: rgba(221, 190, 202, 0.12);
 
-  --btn-primary-bg: #DDBECA;
-  --btn-primary-text: #404C62;
+  --btn-primary-bg: var(--color-pink);
+  --btn-primary-text: var(--color-blue);
 
   --border: rgba(225, 225, 225, 0.2);
   --color-border-strong: rgba(225, 225, 225, 0.4);
@@ -31,9 +29,10 @@
   --header-bg: rgba(64, 76, 98, 0.78);
   --dot-color: rgba(255, 255, 255, 0.12);
 
-  --thumb-1: linear-gradient(135deg, #404C62 , #DDBECA );
-  --thumb-2: linear-gradient(135deg, #64758F , #DDBECA );
-  --thumb-3: linear-gradient(135deg, #DDBECA , #F0DCE4 );
+  --thumb-1: linear-gradient(90deg, #f3c05a , #fdf872 );
+  --thumb-2: linear-gradient(90deg, #77529d , #bc9ade );
+  --thumb-3: linear-gradient(90deg, #82111f , #ef82a0 );
+  --thumb-4: linear-gradient(90deg, #6ab492 , #9fd5bc );
 
   --radius: 16px;
   --radius-sm: 10px;
@@ -1288,8 +1287,10 @@ button {
 }
 
 .project-thumb {
-  aspect-ratio: 16 / 10;
+  height: 90px;
+  aspect-ratio: auto;
   background: var(--thumb-1);
+  flex-shrink: 0;
 }
 
 .project-thumb--alt {
@@ -1298,6 +1299,10 @@ button {
 
 .project-thumb--alt2 {
   background: var(--thumb-3);
+}
+
+.project-thumb--alt3 {
+  background: var(--thumb-4);
 }
 
 .project-body {
