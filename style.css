@@ -1720,3 +1720,181 @@ main,
     gap: 1.75rem;
   }
 }
+
+/* ===== 人才招募：左對齊與純文字 ===== */
+
+#join .section-header {
+  margin-inline: 0;
+  text-align: left;
+}
+
+#join .tabs {
+  justify-content: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+#join .tab-panels {
+  max-width: none;
+  margin-inline: 0;
+}
+
+#join .tab-panel__frame {
+  display: none;
+}
+
+#join .recruitment-note {
+  padding: 0.5rem 0 0;
+  text-align: left;
+}
+
+#join .recruitment-note h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.65rem;
+}
+
+#join .recruitment-note p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+  max-width: 42rem;
+}
+
+/* We Are Looking For 與招募資訊靠近 */
+
+#join .section-marquee {
+  padding-block: 1.5rem 0;
+  margin-top: 0;
+}
+
+#join .marquee-label {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+/* ===== 工作室介紹：透明文字方塊 ===== */
+
+#about .showcase-row {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+#about .showcase-copy {
+  text-align: left;
+}
+
+#about .showcase-panel {
+  width: 100%;
+}
+
+#about .about-text-card {
+  width: 100%;
+  min-height: 130px;
+  padding: 1.5rem;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  display: flex;
+  align-items: flex-start;
+}
+
+#about .about-text-card p {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin: 0;
+  max-width: none;
+  text-align: left;
+}
+
+/* ===== Future Vision：未來展望 ===== */
+
+#features .section-header {
+  text-align: left;
+  margin-inline: 0;
+}
+
+#features .future-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#features .future-item {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr);
+  align-items: start;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+#features .future-index {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#features .future-index > span:first-child {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.8;
+}
+
+#features .future-index-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+#features .future-content h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  margin-bottom: 1rem;
+}
+
+#features .future-card {
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+#features .future-card p {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 2;
+  margin: 0;
+  max-width: 60rem;
+}
+
+@media (max-width: 767px) {
+  #features .future-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  #features .future-index {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+
+  #features .future-index > span:first-child {
+    font-size: 2rem;
+  }
+
+  #features .future-card {
+    padding: 1.25rem;
+  }
+}
